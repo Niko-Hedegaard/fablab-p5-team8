@@ -199,6 +199,11 @@ section {
   align-items: center;
 }
 
+.maskiner__container {
+  padding: 60px 0px;
+
+}
+
 .kalender {
   display: flex;
   justify-content: center;
