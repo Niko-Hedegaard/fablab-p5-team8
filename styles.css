@@ -1,161 +1,186 @@
 :root {
-    --sort: #080B0C;
-    --hvid: #F2F7F8;
-    --ucl: #00454E;
-    --fablab_orange: #E55807;
-    --fablab_gul: #FFD166;
-  
-    /* font weights */
-    --bold: 750;
-  
-    /* spacing */
-    --mobile: 15px;
-    --ldesktop: 150px;
-  }
-  
-  * {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    list-style: none;
-    margin: 0;
-    font-size: 14px;
-    font-family: "CoFo Peshka VF";
-  }
+  --sort: #080b0c;
+  --hvid: #f2f7f8;
+  --ucl: #00454e;
+  --fablab_orange: #e55807;
+  --fablab_gul: #ffd166;
 
-  body {
-    background-color: var(--hvid);
-  }
+  /* font weights */
+  --bold: 750;
 
-  /* styles */
-  h1 {
-    font-family: "CoFo Peshka VF";
-    font-size: 3.5rem;
-    
-  }
-  
-  h2 {
-    font-family: "CoFo Peshka VF";
-    font-size: 2.25rem;
-    font-weight: var(--bold);
-  }
-  
-  h3 {
-    font-family: "CoFo Peshka VF";
-    font-size: 1.8rem;
-    font-weight: var(--bold);
-  }
-  
-  h4 {
-    font-family: "CoFo Peshka VF";
-    font-size: 1.2rem;
-    font-weight: var(--bold);
-  }
+  /* spacing */
+  --mobile: 15px;
+  --ldesktop: 150px;
+}
 
-  .button__cta--1 {
-    display: inline-flex;
-    padding: 12px 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 6px;
-    border-top: 4px solid var(--sort);
-    border-right: 4px solid var(--sort);
-    border-bottom: 8px solid var(--sort);
-    border-left: 4px solid var(--sort);
-    background: var(--fablab_orange);
-    text-decoration: none;
-    font-family: "CoFo Peshka VF";
-    font-weight: 750;
-    color: var(--hvid);
-  }
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  font-size: 14px;
+  font-family: "CoFo Peshka VF";
+}
 
-  .drop__down--container {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    margin-top: 20px;
-  }
+body {
+  background-color: var(--hvid);
+}
 
-  .drop__down--button1 {
-    display: flex;
-    padding: 10px 27px;
-    cursor: pointer;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1 0 0;
-    border-top: 4px solid var(--Sort, #080B0C);
-    border-right: 4px solid var(--Sort, #080B0C);
-    border-bottom: 8px solid var(--Sort, #080B0C);
-    border-left: 4px solid var(--Sort, #080B0C);
-    border-radius: 6px;
-    background: var(--Fablab-orange, #E55807);
-    color: var(--hvid);
-    max-height: 90px;
-  }
+/* styles */
+h1 {
+  font-family: "CoFo Peshka VF";
+  font-size: 3.5rem;
+}
 
-  .pil__left--blue {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-  }
+h2 {
+  font-family: "CoFo Peshka VF";
+  font-size: 2.25rem;
+  font-weight: var(--bold);
+}
 
-  .pil__right--blue {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-  }
+h3 {
+  font-family: "CoFo Peshka VF";
+  font-size: 1.8rem;
+  font-weight: var(--bold);
+}
 
-  /* header */
-  header {
-    display: flex;
-    font-family: "CoFo Peshka VF";
-    font-size: 14px;
-    font-style: normal;
-    width: 100%;
-    height: 99px;
-    padding: 20px 50px 20px 50px;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--ucl);
-    position: fixed;
-    top: 0;
-    z-index: 999999;
+h4 {
+  font-family: "CoFo Peshka VF";
+  font-size: 1.2rem;
+  font-weight: var(--bold);
+}
 
-  }
+.button__cta--1 {
+  display: inline-flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  border-top: 4px solid var(--sort);
+  border-right: 4px solid var(--sort);
+  border-bottom: 8px solid var(--sort);
+  border-left: 4px solid var(--sort);
+  background: var(--fablab_orange);
+  text-decoration: none;
+  font-family: "CoFo Peshka VF";
+  font-weight: 750;
+  color: var(--hvid);
+}
 
-  .header__logo--langs {
-    display: flex;
-    width: fit-content;
-    height: 60px;
-  }
-  
-  .header__logo--langs img {
-    height: 100%;
-    width: auto;
-  }
-  
-  .nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
+.drop__down--container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 20px;
+}
 
-  
-  .nav__menudesk--liste {
-    display: flex;
-    gap: 20px;
-  }
+.drop__down--button1 {
+  display: flex;
+  padding: 10px 27px;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  border-top: 4px solid var(--Sort, #080b0c);
+  border-right: 4px solid var(--Sort, #080b0c);
+  border-bottom: 8px solid var(--Sort, #080b0c);
+  border-left: 4px solid var(--Sort, #080b0c);
+  border-radius: 6px;
+  background: var(--Fablab-orange, #e55807);
+  color: var(--hvid);
+  max-height: 90px;
+}
 
-  .nav__menudesk--liste a{
-    text-decoration: none;
-    color: var(--hvid);
-  }
+.pil__left--blue {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 
-section{
+.pil__right--blue {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* header */
+header {
+  display: flex;
+  font-family: "CoFo Peshka VF";
+  font-size: 14px;
+  font-style: normal;
+  width: 100%;
+  height: 99px;
+  padding: 20px 50px 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--ucl);
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+}
+
+.header__logo--langs {
+  display: flex;
+  width: fit-content;
+  height: 60px;
+}
+
+.header__logo--langs img {
+  height: 100%;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav__menudesk--liste {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__menudesk--liste a {
+  text-decoration: none;
+  color: var(--hvid);
+}
+
+/* sektioner */
+section {
   margin-top: 99px;
   padding: 150px 100px 150px 100px;
+}
+
+.fablab__hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 99px;
+  width: 100%;
+  height: 60vh;
+  background-image: url(images/hero_placeholder-img.png);
+}
+
+.hero__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hero__info {
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--hvid);
+  padding: 30px 60px;
+  border-radius: 6px;
+  max-width: 800px;
 }
 
 .projekter__container--slideshow {
@@ -166,4 +191,11 @@ section{
 
 .projekter__billed--ramme {
   padding: 60px;
+}
+
+.projekter__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
