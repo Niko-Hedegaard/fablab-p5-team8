@@ -144,6 +144,15 @@ section{
   padding: 150px 100px 150px 100px;
 }
 
-.projekter__container{
-  gap: 10px;
+.projekter__container--slideshow {
+  display: flex;
+  justify-content: center;
+}
+
+.projekter__billed--ramme {
+  position: relative;
+  border: 20px solid transparent; 
+  background: url(#) no-repeat center center;
+  background-size: cover;
+  padding-top: 75%;
 }
