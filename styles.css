@@ -51,7 +51,7 @@
     font-weight: var(--bold);
   }
 
-  .button__cta--1{
+  .button__cta--1 {
     display: inline-flex;
     padding: 12px 20px;
     justify-content: center;
@@ -69,14 +69,14 @@
     color: var(--hvid);
   }
 
-  .drop__down--container{
+  .drop__down--container {
     display: flex;
     flex-direction: row;
     gap: 16px;
     margin-top: 20px;
   }
 
-  .drop__down--button1{
+  .drop__down--button1 {
     display: flex;
     padding: 10px 27px;
     cursor: pointer;
@@ -91,6 +91,20 @@
     background: var(--Fablab-orange, #E55807);
     color: var(--hvid);
     max-height: 90px;
+  }
+
+  .pil__left--blue {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .pil__right--blue {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
   }
 
   /* header */
@@ -147,12 +161,9 @@ section{
 .projekter__container--slideshow {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .projekter__billed--ramme {
-  position: relative;
-  border: 20px solid transparent; 
-  background: url(#) no-repeat center center;
-  background-size: cover;
-  padding-top: 75%;
+  padding: 60px;
 }
