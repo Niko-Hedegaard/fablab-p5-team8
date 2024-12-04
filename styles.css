@@ -73,6 +73,7 @@
     display: flex;
     flex-direction: row;
     gap: 16px;
+    margin-top: 20px;
   }
 
   .drop__down--button1{
@@ -89,6 +90,7 @@
     border-radius: 6px;
     background: var(--Fablab-orange, #E55807);
     color: var(--hvid);
+    max-height: 90px;
   }
 
   /* header */
