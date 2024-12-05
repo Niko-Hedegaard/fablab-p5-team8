@@ -58,6 +58,10 @@ p {
   line-height: 22px;
 }
 
+.sektion__titel {
+  padding: 60px 0px;
+}
+
 .button__cta--1 {
   display: inline-flex;
   padding: 12px 20px;
@@ -156,7 +160,7 @@ header {
 .nav__menudesk--liste a {
   text-decoration: none;
   color: var(--glass_hvid);
-  
+
 }
 
 /* sektioner */
@@ -177,7 +181,6 @@ header {
   justify-content: center;
   align-items: center;
   padding: 150px 100px 150px 100px;
-  
 }
 
 .hero__info {
@@ -199,10 +202,6 @@ header {
   align-items: center;
 }
 
-.projekter__billed--ramme {
-  padding: 60px;
-}
-
 .projekter__text {
   display: flex;
   flex-direction: column;
@@ -212,10 +211,6 @@ header {
 
 .maskiner__sektion {
   padding: 150px 100px 150px 100px;
-}
-
-.maskiner__container {
-  padding: 60px 0px;
 }
 
 .kalender__sektion {
