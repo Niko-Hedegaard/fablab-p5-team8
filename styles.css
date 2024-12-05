@@ -59,7 +59,7 @@ p {
 }
 
 .sektion__titel {
-  padding: 60px 0px;
+  padding: 0px 0px 60px 0px;
 }
 
 .button__cta--1 {
@@ -104,14 +104,14 @@ p {
   max-height: 90px;
 }
 
-.pil__left--blue {
+.pil__left {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
 }
 
-.pil__right--blue {
+.pil__right {
   background: none;
   border: none;
   padding: 0;
