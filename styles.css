@@ -1,9 +1,9 @@
 :root {
   --sort: #080b0c;
-  --hvid: #f2f7f8;
+  --glass_hvid: #f2f7f8;
   --ucl: #00454e;
   --fablab_orange: #e55807;
-  --fablab_gul: #ffd166;
+  --gnist_gul: #ffd166;
 
   /* font weights */
   --bold: 750;
@@ -29,25 +29,33 @@ body {
 /* styles */
 h1 {
   font-family: "CoFo Peshka VF";
-  font-size: 3.5rem;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 750;
+  line-height: 55,5px;
 }
 
 h2 {
   font-family: "CoFo Peshka VF";
-  font-size: 2.25rem;
-  font-weight: var(--bold);
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 750;
+  line-height: 46,6px;
 }
 
 h3 {
   font-family: "CoFo Peshka VF";
-  font-size: 1.8rem;
-  font-weight: var(--bold);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 750;
+  line-height: 28,9px;
 }
 
-h4 {
-  font-family: "CoFo Peshka VF";
-  font-size: 1.2rem;
-  font-weight: var(--bold);
+p {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
 }
 
 .button__cta--1 {
@@ -65,7 +73,7 @@ h4 {
   text-decoration: none;
   font-family: "CoFo Peshka VF";
   font-weight: 750;
-  color: var(--hvid);
+  color: var(--glass_hvid);
 }
 
 .drop__down--container {
@@ -88,7 +96,7 @@ h4 {
   border-left: 4px solid var(--Sort, #080b0c);
   border-radius: 6px;
   background: var(--Fablab-orange, #e55807);
-  color: var(--hvid);
+  color: var(--glass_hvid);
   max-height: 90px;
 }
 
@@ -147,13 +155,10 @@ header {
 
 .nav__menudesk--liste a {
   text-decoration: none;
-  color: var(--hvid);
+  color: var(--glass_hvid);
 }
 
 /* sektioner */
-section {
-  padding: 150px 100px 150px 100px;
-}
 
 .fablab__hero {
   display: flex;
@@ -170,16 +175,21 @@ section {
   height: 100%;
   justify-content: center;
   align-items: center;
+  padding: 150px 100px 150px 100px;
   
 }
 
 .hero__info {
   flex-direction: column;
   justify-content: space-around;
-  background-color: var(--hvid);
+  background-color: var(--glass_hvid);
   padding: 30px 60px;
   border-radius: 6px;
   max-width: 800px;
+}
+
+.projekter__sektion {
+  padding: 150px 100px 150px 100px;
 }
 
 .projekter__container--slideshow {
@@ -199,23 +209,25 @@ section {
   align-items: center;
 }
 
-.maskiner__container {
-  padding: 60px 0px;
-
+.maskiner__sektion {
+  padding: 150px 100px 150px 100px;
 }
 
-.kalender {
+.maskiner__container {
+  padding: 60px 0px;
+}
+
+.kalender__sektion {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
+  padding: 150px 100px 150px 100px;
 }
 
 .kalender__container {
   width: 100%;
   height: 100%;
 }
-
 
 .kalender__navigation {
   display: flex;
@@ -228,6 +240,6 @@ section {
   border-left: 4px solid var(--Sort, #080B0C);
   border-radius: 6px;
   background: var(--Fablab-orange, #E55807);
-  color: var(--hvid);
+  color: var(--glass_hvid);
   padding: 18px 40px;
 }
