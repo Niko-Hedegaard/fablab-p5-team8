@@ -122,6 +122,19 @@ p {
   cursor: pointer;
 }
 
+.input__felt--1 {
+  display: flex;
+  padding: 15px 30px;
+  align-items: flex-start;
+  gap: 10px;
+  border-top: 4px solid var(--Sort, #080B0C);
+  border-right: 4px solid var(--Sort, #080B0C);
+  border-bottom: 8px solid var(--Sort, #080B0C);
+  border-left: 4px solid var(--Sort, #080B0C);
+  border-radius: 6px;
+  background: var(--Hvid, #F2F7F8);
+}
+
 /* header */
 header {
   display: flex;
@@ -251,15 +264,17 @@ header {
 }
 
 .kontakt__container {
-display: flex;
-justify-content: space-between;
-width: 100%;
-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 .kontakt__formular {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 0px 60px 0px 0px;
   gap: 30px;
 }
 
