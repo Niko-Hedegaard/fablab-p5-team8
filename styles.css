@@ -426,20 +426,87 @@ header {
     
   }
   
-  .nav {
+  .hero__container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+  }
+  
+  .hero__info {
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--glass_hvid);
+    padding: 30px 60px;
+    border-radius: 6px;
+    max-width: 500px;
+  }
+  
+  .projekter__sektion {
+    padding: var(--ldesktop_sektion);
   }
 
-  .nav__menudesk--liste {
+  .projekter__container--slideshow img{
+    max-width: 500px;
+    padding: 0px 20px;
+  }
+
+
+  .maskiner__sektion {
+    padding: var(--ldesktop_sektion);
+  }
+
+  .kalender__sektion {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--ldesktop_sektion);
+  }
+
+
+  .kontakt__sektion {
+    padding: var(--ldesktop_sektion);
   }
   
-  .nav__menudesk--liste a {
-    text-decoration: none;
+  .kontakt__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .kontakt__billede img {
+    padding: 30px 0px 0px 0px;
+    max-width: 500px;
+  }
+
+  .kontakt__oplysninger {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 100px 100px;
     color: var(--glass_hvid);
-  
+    background-color: var(--ucl);
   }
+  
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--mdesktop);
+  }
+  
+  .footer__felt img {
+    max-width: 500px;
+  }
+  
+  .footer__info--container {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
