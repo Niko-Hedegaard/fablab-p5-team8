@@ -11,6 +11,7 @@
 
   /* spacing */
   --ldesktop: 60px;
+  --ldesktop_sektion: 150px 100px 150px 100px; 
 }
 
 * {
@@ -243,7 +244,7 @@ header {
 }
 
 .projekter__sektion {
-  padding: 150px 100px 150px 100px;
+  padding: var(--ldesktop_sektion);
 }
 
 .projekter__container--slideshow {
@@ -260,14 +261,14 @@ header {
 }
 
 .maskiner__sektion {
-  padding: 150px 100px 150px 100px;
+  padding: var(--ldesktop_sektion);
 }
 
 .kalender__sektion {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 150px 100px 150px 100px;
+  padding: var(--ldesktop_sektion);
 }
 
 .kalender__container {
@@ -292,7 +293,7 @@ header {
 
 .kontakt__sektion {
   color: var(--glass_hvid);
-  padding: 150px 100px 150px 100px;
+  padding: var(--ldesktop_sektion);
   background-color: var(--ucl);
 }
 
@@ -342,7 +343,7 @@ header {
 }
 
 .faq {
-  padding: 150px 100px 150px 100px;
+  padding: var(--ldesktop_sektion);
 }
 
 .faq__container {
