@@ -88,10 +88,27 @@ p {
   display: flex;
   flex-direction: row;
   gap: 16px;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .drop__down--button1 {
+  display: flex;
+  padding: 10px 27px;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  border-top: 4px solid var(--Sort, #080b0c);
+  border-right: 4px solid var(--Sort, #080b0c);
+  border-bottom: 8px solid var(--Sort, #080b0c);
+  border-left: 4px solid var(--Sort, #080b0c);
+  border-radius: 6px;
+  background: var(--Fablab-orange, #e55807);
+  color: var(--glass_hvid);
+  max-height: 90px;
+}
+
+.drop__down--button2 {
   display: flex;
   padding: 10px 27px;
   cursor: pointer;
@@ -306,4 +323,14 @@ header {
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+}
+
+.faq {
+  padding: 150px 100px 150px 100px;
+}
+
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
