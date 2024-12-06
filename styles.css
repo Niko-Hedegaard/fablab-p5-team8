@@ -189,11 +189,13 @@ header {
   display: flex;
   width: fit-content;
   height: 60px;
+  
 }
 
 .header__logo--langs img {
   height: 100%;
   width: auto;
+  border-radius: 6px;
 }
 
 .nav {
@@ -369,4 +371,9 @@ header {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.footer__info--container {
+  display: flex;
+  flex-direction: column;
 }
