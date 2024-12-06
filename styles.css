@@ -174,7 +174,6 @@ a {
 header {
   display: flex;
   font-family: "cofo-peshka-variable",sans-serif;
-  font-size: 14px;
   font-style: normal;
   width: 100%;
   height: 99px;
@@ -185,6 +184,10 @@ header {
   position: fixed;
   top: 0;
   z-index: 999999;
+}
+
+.header__logo--mobile {
+  display: none;
 }
 
 .header__logo--langs {
@@ -385,4 +388,58 @@ header {
 .footer__info--container {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 884px) {
+  a {
+    color: var(--Hvid);
+    font-family: "cofo-peshka-variable",sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: var(--cofo_bold);
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: var(--Fablab-orange, #E55807);
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    font-family: "cofo-peshka-variable",sans-serif;
+    font-style: normal;
+    justify-content: space-;
+    background: var(--ucl);
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+  }
+  .header__logo--mobile {
+    display: flex;
+  }
+  .header__logo--langs {
+    display: none;
+    
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav__menudesk--liste {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav__menudesk--liste a {
+    text-decoration: none;
+    color: var(--glass_hvid);
+  
+  }
 }
