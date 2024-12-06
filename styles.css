@@ -91,7 +91,6 @@ a {
   padding: 12px 20px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   border-radius: 6px;
   border-top: 4px solid var(--sort);
   border-right: 4px solid var(--sort);
@@ -100,15 +99,15 @@ a {
   background: var(--fablab_orange);
   text-decoration: none;
   font-family: "cofo-peshka-variable",sans-serif;
-  font-weight: 750;
+  font-weight: var(--cofo_bold);
   color: var(--glass_hvid);
 }
 
 .drop__down--container {
   display: flex;
   flex-direction: row;
-  gap: var(--sdesktop);
-  margin-top: 16px;
+  gap: 16px;
+  margin-top: var(--sdesktop);
 }
 
 .drop__down--button1 {
@@ -163,7 +162,6 @@ a {
   display: flex;
   padding: 15px 30px;
   align-items: flex-start;
-  gap: 10px;
   border-top: 4px solid var(--Sort, #080B0C);
   border-right: 4px solid var(--Sort, #080B0C);
   border-bottom: 8px solid var(--Sort, #080B0C);
@@ -312,23 +310,32 @@ header {
   flex-direction: column;
   width: 100%;
   padding: 0px 60px 0px 0px;
-  gap: 10px;
+  gap: var(--sdesktop);
 }
 
 .kontakt__input--felter{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--sdesktop);
+}
+
+.kontakt__oplysninger {
+  display: flex;
+  flex-direction: column;
 }
 
 .kontakt__billede img {
   max-width: 20vw;
 }
 
+.kontakt__links {
+  display: flex;
+  flex-direction: column;
+}
+
 .kontakt__links--holder {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  gap: 16px;
 }
 
 .kontakt__links--holder p{
@@ -372,7 +379,7 @@ header {
 .footer__felt {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: var(--sdesktop);
 }
 
 .footer__info--container {
