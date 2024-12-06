@@ -275,15 +275,35 @@ header {
   flex-direction: column;
   width: 100%;
   padding: 0px 60px 0px 0px;
-  gap: 30px;
+  gap: 10px;
 }
 
 .kontakt__input--felter{
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 
 .kontakt__billede img {
   max-width: 20vw;
+}
+
+.kontakt__links--holder {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.kontakt__links--holder p{
+  font-family: "CoFo Peshka VF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 750;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: var(--Fablab-orange, #E55807);
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
