@@ -58,6 +58,22 @@ p {
   line-height: 22px;
 }
 
+a {
+  color: var(--Hvid);
+  font-family: "CoFo Peshka VF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 750;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: var(--Fablab-orange, #E55807);
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
 .sektion__titel {
   padding: 0px 0px 60px 0px;
 }
@@ -333,4 +349,24 @@ header {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 100px 100px 100px;
+  color: var(--glass_hvid);
+  background-color: var(--ucl);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__felt {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
