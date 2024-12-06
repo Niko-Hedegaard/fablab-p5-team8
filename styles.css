@@ -6,11 +6,14 @@
   --gnist_gul: #ffd166;
 
   /* font weights */
-  --CoFo_bold: 700;
-  --coFo_black: 900;
+  --cofo_regular: 400;
+  --cofo_bold: 700;
+  --cofo_black: 900;
 
   /* spacing */
   --ldesktop: 60px;
+  --mdesktop: 30px;
+  --sdesktop: 20px;
   --ldesktop_sektion: 150px 100px 150px 100px; 
 }
 
@@ -20,7 +23,7 @@
   list-style: none;
   margin: 0;
   font-size: 14px;
-  font-family: "CoFo Peshka VF";
+  font-family: "cofo-peshka-variable",sans-serif;
 }
 
 body {
@@ -29,23 +32,23 @@ body {
 
 /* styles */
 h1 {
-  font-family: "CoFo Peshka VF";
+  font-family: "cofo-peshka-variable",sans-serif;
   font-size: 50px;
   font-style: normal;
-  font-weight: var(--coFo_black);
+  font-weight: var(--cofo_black);
   line-height: 55,5px;
 }
 
 h2 {
-  font-family: "CoFo Peshka VF";
+  font-family: "cofo-peshka-variable",sans-serif;
   font-size: 42px;
   font-style: normal;
-  font-weight: var(--coFo_black);
+  font-weight: var(--cofo_black);
   line-height: 46,6px;
 }
 
 h3 {
-  font-family: "CoFo Peshka VF";
+  font-family: "cofo-peshka-variable",sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: var(--coFo_black);
@@ -53,7 +56,7 @@ h3 {
 }
 
 p {
-  font-family: "Proxima Nova";
+  font-family: "proxima-nova",sans-serif;
   font-size: 16px;
   font-style: normal;
   line-height: 22px;
@@ -61,10 +64,10 @@ p {
 
 a {
   color: var(--Hvid);
-  font-family: "CoFo Peshka VF";
+  font-family: "cofo-peshka-variable",sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: var(--CoFo_bold);
+  font-weight: var(--cofo_bold);
   line-height: normal;
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -96,7 +99,7 @@ a {
   border-left: 4px solid var(--sort);
   background: var(--fablab_orange);
   text-decoration: none;
-  font-family: "CoFo Peshka VF";
+  font-family: "cofo-peshka-variable",sans-serif;
   font-weight: 750;
   color: var(--glass_hvid);
 }
@@ -104,7 +107,7 @@ a {
 .drop__down--container {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: var(--sdesktop);
   margin-top: 16px;
 }
 
@@ -172,7 +175,7 @@ a {
 /* header */
 header {
   display: flex;
-  font-family: "CoFo Peshka VF";
+  font-family: "cofo-peshka-variable",sans-serif;
   font-size: 14px;
   font-style: normal;
   width: 100%;
@@ -329,10 +332,10 @@ header {
 }
 
 .kontakt__links--holder p{
-  font-family: "CoFo Peshka VF";
+  font-family: "cofo-peshka-variable",sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 750;
+  font-weight: var(--cofo_bold);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
