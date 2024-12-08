@@ -360,6 +360,130 @@ header {
   cursor: pointer;
 }
 
+.oversigt__ledig {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  align-content: center;
+  justify-content: center;
+  padding: 200px;
+}
+.oversigt__ledig.active {
+  display: block;
+}
+.oversigt__booket {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  align-content: center;
+  justify-content: center;
+  padding: 200px;
+}
+.oversigt__booket.active {
+  display: block;
+}
+.oversigt__booket--aften {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  align-content: center;
+  justify-content: center;
+  padding: 200px;
+}
+.oversigt__booket--aften.active {
+  display: block;
+}
+.oversigt__booket--morgen {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  align-content: center;
+  justify-content: center;
+  padding: 200px;
+}
+.oversigt__booket--morgen.active {
+  display: block;
+}
+.oversigt__content {
+  position: relative;
+  width: 75%;
+  min-width: 250px;
+  height: auto;
+  background-color: var(--glass_hvid);
+  padding: 40px;
+  margin: auto;
+  color: var(--sort);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.oversigt__content h2 {
+  margin-top: 40px;
+}
+.oversigt__xmark {
+  position: absolute;
+  right: 40px;
+  width: 30px;
+  transition: 0.3s;
+}
+.oversigt__xmark:hover {
+  cursor: pointer;
+}
+.oversigt__content--tider {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+.oversigt__content--tider--element {
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
+  padding: 10px 15px;
+  background-color: var(--ucl);
+  color: var(--glass_hvid);
+  border-radius: 5px;
+  border-top: 4px solid var(--Sort, #080b0c);
+  border-right: 4px solid var(--Sort, #080b0c);
+  border-bottom: 8px solid var(--Sort, #080b0c);
+  border-left: 4px solid var(--Sort, #080b0c);
+  letter-spacing: 2px;
+}
+.oversigt__content--tider--element.booket {
+  background-color: var(--fablab_orange);
+}
+
 .kontakt__sektion {
   color: var(--glass_hvid);
   padding: var(--ldesktop_sektion);

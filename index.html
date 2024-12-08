@@ -161,35 +161,77 @@
             <div class="kalender__dage" id="dage__container">
             </div>
             <div class="kalender__dato">
-              <button class="kalender__dato--element booket__morgen">2</button>
-              <button class="kalender__dato--element">3</button>
-              <button class="kalender__dato--element booket__aften">4</button>
-              <button class="kalender__dato--element">5</button>
-              <button class="kalender__dato--element booket">6</button>
-              <button class="kalender__dato--element">9</button>
-              <button class="kalender__dato--element">10</button>
-              <button class="kalender__dato--element booket">11</button>
-              <button class="kalender__dato--element">12</button>
-              <button class="kalender__dato--element booket">13</button>
-              <button class="kalender__dato--element booket">16</button>
-              <button class="kalender__dato--element">17</button>
-              <button class="kalender__dato--element">18</button>
-              <button class="kalender__dato--element booket">19</button>
-              <button class="kalender__dato--element">20</button>
-              <button class="kalender__dato--element">23</button>
-              <button class="kalender__dato--element booket">24</button>
-              <button class="kalender__dato--element booket">25</button>
-              <button class="kalender__dato--element booket">26</button>
-              <button class="kalender__dato--element booket">27</button>
-              <button class="kalender__dato--element">30</button>
-              <button class="kalender__dato--element booket">31</button>
+              <button class="kalender__dato--element booket__morgen" onclick="modalBooketMorgenKnap()">2</button>
+              <button class="kalender__dato--element ledig" onclick="modalLedigKnap()">3</button>
+              <button class="kalender__dato--element booket__aften" onclick="modalBooketAftenKnap()">4</button>
+              <button class="kalender__dato--element ledig" onclick="modalLedigKnap()">5</button>
+              <button class="kalender__dato--element booket" onclick="modalBooketKnap()">6</button>
+              <button class="kalender__dato--element ledig" onclick="modalLedigKnap()">9</button>
+              <button class="kalender__dato--element ledig" onclick="modalLedigKnap()">10</button>
+              <button class="kalender__dato--element booket" onclick="modalBooketKnap()">11</button>
+              <button class="kalender__dato--element booket__morgen" onclick="modalBooketMorgenKnap()">12</button>
+              <button class="kalender__dato--element booket" onclick="modalBooketKnap()">13</button>
+              <button class="kalender__dato--element booket" onclick="modalBooketKnap()">16</button>
+              <button class="kalender__dato--element ledig" onclick="modalLedigKnap()">17</button>
+              <button class="kalender__dato--element ledig" onclick="modalLedigKnap()">18</button>
+              <button class="kalender__dato--element booket" onclick="modalBooketKnap()">19</button>
+              <button class="kalender__dato--element ledig" onclick="modalLedigKnap()">20</button>
+              <button class="kalender__dato--element booket__aften" onclick="modalBooketAftenKnap()">23</button>
+              <button class="kalender__dato--element booket" onclick="modalBooketKnap()">24</button>
+              <button class="kalender__dato--element booket" onclick="modalBooketKnap()">25</button>
+              <button class="kalender__dato--element booket" onclick="modalBooketKnap()">26</button>
+              <button class="kalender__dato--element booket" onclick="modalBooketKnap()">27</button>
+              <button class="kalender__dato--element ledig" onclick="modalLedigKnap()">30</button>
+              <button class="kalender__dato--element booket" onclick="modalBooketKnap()">31</button>
             </div>
           </div>
         </div>
         <div class="oversigt__ledig">
           <div class="oversigt__content">
-            <h2>Kig forbi! <br> Vi er ledige</h2>
+            <img src="images/icons/xmark.svg" alt="Luk modalboksen" class="oversigt__xmark" onclick="modalLuk()">
+            <h2>Kig forbi! <br> Vi er ledige hele dagen</h2>
             <p>Den valgte dag kan du bruge fablab som walk in og derfor behøver ingen booking.</p>
+            <div class="oversigt__content--tider">
+              <div class="oversigt__content--tider--element">8:15 - 11:30 ledig</div>
+              <div class="oversigt__content--tider--element">12:15 - 15:30 ledig</div>
+              <p>Ring til os på <span><a href="#">+45 40878129</a></span> hvis du vil booke en tid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="oversigt__booket">
+          <div class="oversigt__content">
+            <img src="images/icons/xmark.svg" alt="Luk modalboksen" class="oversigt__xmark" onclick="modalLuk()">
+            <h2>Desværre <br>Vi er booket hele dagen</h2>
+            <p>Der er booket hele dagen så der er chance for alle maskiner er optaget i dag</p>
+            <div class="oversigt__content--tider">
+              <div class="oversigt__content--tider--element booket">8:15 - 11:30 booket</div>
+              <div class="oversigt__content--tider--element booket">12:15 - 15:30 booket</div>
+              <p>Ring til os på <span><a href="#">+45 40878129</a></span> hvis du vil booke en tid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="oversigt__booket--aften">
+          <div class="oversigt__content">
+            <img src="images/icons/xmark.svg" alt="Luk modalboksen" class="oversigt__xmark" onclick="modalLuk()">
+            <h2>Kom forbi!<br>Vi er ledig noget af dagen</h2>
+            <p>Vi er ledige om morgenen så der vil maskinerne højst sandsynligt ikke blive brugt.</p>
+            <div class="oversigt__content--tider">
+              <div class="oversigt__content--tider--element">8:15 - 11:30 ledig</div>
+              <div class="oversigt__content--tider--element booket">12:15 - 15:30 booket</div>
+              <p>Ring til os på <span><a href="#">+45 40878129</a></span> hvis du vil booke en tid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="oversigt__booket--morgen">
+          <div class="oversigt__content">
+            <img src="images/icons/xmark.svg" alt="Luk modalboksen" class="oversigt__xmark" onclick="modalLuk()">
+            <h2>Kom forbi!<br>Vi er ledig noget af dagen</h2>
+            <p>Vi er ledige om aftenen så der vil maskinerne højst sandsynligt ikke blive brugt.</p>
+            <div class="oversigt__content--tider">
+              <div class="oversigt__content--tider--element booket">8:15 - 11:30 booket</div>
+              <div class="oversigt__content--tider--element">12:15 - 15:30 ledig</div>
+              <p>Ring til os på <span><a href="#">+45 40878129</a></span> hvis du vil booke en tid.</p>
+            </div>
           </div>
         </div>
       </section>
