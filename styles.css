@@ -308,7 +308,6 @@ header {
   height: auto;
   display: flex;
   flex-direction: row;
-  flex-basis: 14%;
   margin: auto;
   gap: 10px;
 }
@@ -323,11 +322,26 @@ header {
   background: var(--sort);
   color: var(--glass_hvid);
 }
-.kalender__dage--tekst {
-  font-family: "cofo-peshka-variable", sans-serif;
-  font-weight: 1000;
+.kalender__tekst {
   font-family: "cofo-peshka-variable", sans-serif;
   font-variation-settings: var(--cofo_black);
+  font-size: 25px;
+}
+.kalender__dato {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: auto;
+}
+.kalender__dato--element {
+  width: 100%;
+  height: auto;
+  padding: 40px 0px;
+  text-align: center;
+  background-color: var(--ucl);
+  color: var(--glass_hvid);
+  border-radius: 10px;
 }
 
 .kontakt__sektion {
