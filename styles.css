@@ -335,13 +335,29 @@ header {
   height: auto;
 }
 .kalender__dato--element {
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
+  font-size: 25px;
   width: 100%;
   height: auto;
   padding: 40px 0px;
   text-align: center;
   background-color: var(--ucl);
   color: var(--glass_hvid);
+  border: none;
   border-radius: 10px;
+  transition: 0.3s;
+}
+.kalender__dato--element:hover {
+  background-color: var(--gnist_gul);
+  cursor: pointer;
+}
+.kalender__dato--element.booket {
+  background-color: var(--fablab_orange);
+}
+.kalender__dato--element.booket:hover {
+  background-color: var(--gnist_gul);
+  cursor: pointer;
 }
 
 .kontakt__sektion {
