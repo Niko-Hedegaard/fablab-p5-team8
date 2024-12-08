@@ -8,13 +8,13 @@
   /* font weights */
   --cofo_regular: 400;
   --cofo_bold: 700;
-  --cofo_black: 900;
+  --cofo_black: "wdth" 125, "wght" 900, "slnt" 0;
 
   /* spacing */
   --ldesktop: 60px;
   --mdesktop: 30px;
   --sdesktop: 20px;
-  --ldesktop_sektion: 150px 100px 150px 100px; 
+  --ldesktop_sektion: 150px 100px 150px 100px;
 }
 
 * {
@@ -23,7 +23,7 @@
   list-style: none;
   margin: 0;
   font-size: 14px;
-  font-family: "cofo-peshka-variable",sans-serif;
+  font-family: "cofo-peshka-variable", sans-serif;
 }
 
 body {
@@ -32,31 +32,31 @@ body {
 
 /* styles */
 h1 {
-  font-family: "cofo-peshka-variable",sans-serif;
+  font-family: "cofo-peshka-variable", sans-serif;
   font-size: 50px;
   font-style: normal;
-  font-weight: var(--cofo_black);
-  line-height: 55,5px;
+  font-variation-settings: var(--cofo_black);
+  line-height: 55, 5px;
 }
 
 h2 {
-  font-family: "cofo-peshka-variable",sans-serif;
+  font-family: "cofo-peshka-variable", sans-serif;
   font-size: 42px;
   font-style: normal;
-  font-weight: var(--cofo_black);
-  line-height: 46,6px;
+  font-variation-settings: var(--cofo_black);
+  line-height: 46, 6px;
 }
 
 h3 {
-  font-family: "cofo-peshka-variable",sans-serif;
+  font-family: "cofo-peshka-variable", sans-serif;
   font-size: 26px;
   font-style: normal;
-  font-weight: var(--coFo_black);
-  line-height: 28,9px;
+  font-variation-settings: var(--cofo_black);
+  line-height: 28, 9px;
 }
 
 p {
-  font-family: "proxima-nova",sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 16px;
   font-style: normal;
   line-height: 22px;
@@ -64,15 +64,15 @@ p {
 
 a {
   color: var(--Hvid);
-  font-family: "cofo-peshka-variable",sans-serif;
+  font-family: "cofo-peshka-variable", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: var(--cofo_bold);
+  font-variation-settings: var(--cofo_black);
   line-height: normal;
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
-  text-decoration-color: var(--Fablab-orange, #E55807);
+  text-decoration-color: var(--Fablab-orange, #e55807);
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
@@ -82,7 +82,7 @@ a {
   padding: 0px 0px 60px 0px;
 }
 
-.sektion__tekst{
+.sektion__tekst {
   padding: 0px 0px 30px 0px;
 }
 
@@ -98,8 +98,8 @@ a {
   border-left: 4px solid var(--sort);
   background: var(--fablab_orange);
   text-decoration: none;
-  font-family: "cofo-peshka-variable",sans-serif;
-  font-weight: var(--cofo_bold);
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
   color: var(--glass_hvid);
 }
 
@@ -162,18 +162,19 @@ a {
   display: flex;
   padding: 15px 30px;
   align-items: flex-start;
-  border-top: 4px solid var(--Sort, #080B0C);
-  border-right: 4px solid var(--Sort, #080B0C);
-  border-bottom: 8px solid var(--Sort, #080B0C);
-  border-left: 4px solid var(--Sort, #080B0C);
+  border-top: 4px solid var(--Sort, #080b0c);
+  border-right: 4px solid var(--Sort, #080b0c);
+  border-bottom: 8px solid var(--Sort, #080b0c);
+  border-left: 4px solid var(--Sort, #080b0c);
   border-radius: 6px;
-  background: var(--Hvid, #F2F7F8);
+  background: var(--Hvid, #f2f7f8);
 }
 
 /* header */
 header {
   display: flex;
-  font-family: "cofo-peshka-variable",sans-serif;
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
   font-style: normal;
   width: 100%;
   height: 99px;
@@ -194,7 +195,6 @@ header {
   display: flex;
   width: fit-content;
   height: 60px;
-  
 }
 
 .header__logo--langs img {
@@ -217,7 +217,6 @@ header {
 .nav__menudesk--liste a {
   text-decoration: none;
   color: var(--glass_hvid);
-
 }
 
 /* sektioner */
@@ -278,6 +277,9 @@ header {
 .kalender__container {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .kalender__navigation {
@@ -285,14 +287,47 @@ header {
   flex-direction: row;
   justify-content: space-between;
   background-color: var(--fablab_orange);
-  border-top: 4px solid var(--Sort, #080B0C);
-  border-right: 4px solid var(--Sort, #080B0C);
-  border-bottom: 8px solid var(--Sort, #080B0C);
-  border-left: 4px solid var(--Sort, #080B0C);
+  border-top: 4px solid var(--Sort, #080b0c);
+  border-right: 4px solid var(--Sort, #080b0c);
+  border-bottom: 8px solid var(--Sort, #080b0c);
+  border-left: 4px solid var(--Sort, #080b0c);
   border-radius: 6px;
-  background: var(--Fablab-orange, #E55807);
+  background: var(--Fablab-orange, #e55807);
   color: var(--glass_hvid);
   padding: 18px 40px;
+}
+.kalender__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.kalender__dage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 14%;
+  margin: auto;
+  gap: 10px;
+}
+.kalender__dage--element {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 20px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--sort);
+  color: var(--glass_hvid);
+}
+.kalender__dage--tekst {
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-weight: 1000;
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
 }
 
 .kontakt__sektion {
@@ -316,7 +351,7 @@ header {
   gap: var(--sdesktop);
 }
 
-.kontakt__input--felter{
+.kontakt__input--felter {
   display: flex;
   flex-direction: column;
   gap: var(--sdesktop);
@@ -341,15 +376,15 @@ header {
   gap: 16px;
 }
 
-.kontakt__links--holder p{
-  font-family: "cofo-peshka-variable",sans-serif;
+.kontakt__links--holder p {
+  font-family: "cofo-peshka-variable", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: var(--cofo_bold);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
-  text-decoration-color: var(--Fablab-orange, #E55807);
+  text-decoration-color: var(--Fablab-orange, #e55807);
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
@@ -393,7 +428,7 @@ header {
 @media screen and (max-width: 884px) {
   a {
     color: var(--Hvid);
-    font-family: "cofo-peshka-variable",sans-serif;
+    font-family: "cofo-peshka-variable", sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: var(--cofo_bold);
@@ -401,7 +436,7 @@ header {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
-    text-decoration-color: var(--Fablab-orange, #E55807);
+    text-decoration-color: var(--Fablab-orange, #e55807);
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
@@ -410,7 +445,7 @@ header {
   header {
     display: flex;
     justify-content: center;
-    font-family: "cofo-peshka-variable",sans-serif;
+    font-family: "cofo-peshka-variable", sans-serif;
     font-style: normal;
     justify-content: space-;
     background: var(--ucl);
@@ -423,15 +458,14 @@ header {
   }
   .header__logo--langs {
     display: none;
-    
   }
-  
+
   .hero__container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .hero__info {
     flex-direction: column;
     justify-content: space-around;
@@ -440,16 +474,15 @@ header {
     border-radius: 6px;
     max-width: 500px;
   }
-  
+
   .projekter__sektion {
     padding: var(--ldesktop_sektion);
   }
 
-  .projekter__container--slideshow img{
+  .projekter__container--slideshow img {
     max-width: 500px;
     padding: 0px 20px;
   }
-
 
   .maskiner__sektion {
     padding: var(--ldesktop_sektion);
@@ -462,18 +495,17 @@ header {
     padding: var(--ldesktop_sektion);
   }
 
-
   .kontakt__sektion {
     padding: var(--ldesktop_sektion);
   }
-  
+
   .kontakt__container {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
   }
-  
+
   .kontakt__billede img {
     padding: 30px 0px 0px 0px;
     max-width: 500px;
@@ -482,7 +514,6 @@ header {
   .kontakt__oplysninger {
     display: flex;
     flex-direction: column;
-
   }
 
   .footer {
@@ -492,21 +523,20 @@ header {
     color: var(--glass_hvid);
     background-color: var(--ucl);
   }
-  
+
   .footer__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: var(--mdesktop);
   }
-  
+
   .footer__felt img {
     max-width: 500px;
   }
-  
+
   .footer__info--container {
     display: flex;
     flex-direction: column;
   }
-
 }
