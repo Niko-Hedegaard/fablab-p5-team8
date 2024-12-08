@@ -8,13 +8,13 @@
   /* font weights */
   --cofo_regular: 400;
   --cofo_bold: 700;
-  --cofo_black: 900;
+  --cofo_black: "wdth" 125, "wght" 900, "slnt" 0;
 
   /* spacing */
   --ldesktop: 60px;
   --mdesktop: 30px;
   --sdesktop: 20px;
-  --ldesktop_sektion: 150px 100px 150px 100px; 
+  --ldesktop_sektion: 150px 100px 150px 100px;
 }
 
 * {
@@ -23,7 +23,7 @@
   list-style: none;
   margin: 0;
   font-size: 14px;
-  font-family: "cofo-peshka-variable",sans-serif;
+  font-family: "cofo-peshka-variable", sans-serif;
 }
 
 body {
@@ -32,31 +32,31 @@ body {
 
 /* styles */
 h1 {
-  font-family: "cofo-peshka-variable",sans-serif;
+  font-family: "cofo-peshka-variable", sans-serif;
   font-size: 50px;
   font-style: normal;
-  font-weight: var(--cofo_black);
-  line-height: 55,5px;
+  font-variation-settings: var(--cofo_black);
+  line-height: 55, 5px;
 }
 
 h2 {
-  font-family: "cofo-peshka-variable",sans-serif;
+  font-family: "cofo-peshka-variable", sans-serif;
   font-size: 42px;
   font-style: normal;
-  font-weight: var(--cofo_black);
-  line-height: 46,6px;
+  font-variation-settings: var(--cofo_black);
+  line-height: 46, 6px;
 }
 
 h3 {
-  font-family: "cofo-peshka-variable",sans-serif;
+  font-family: "cofo-peshka-variable", sans-serif;
   font-size: 26px;
   font-style: normal;
-  font-weight: var(--coFo_black);
-  line-height: 28,9px;
+  font-variation-settings: var(--cofo_black);
+  line-height: 28, 9px;
 }
 
 p {
-  font-family: "proxima-nova",sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 16px;
   font-style: normal;
   line-height: 22px;
@@ -64,15 +64,15 @@ p {
 
 a {
   color: var(--Hvid);
-  font-family: "cofo-peshka-variable",sans-serif;
+  font-family: "cofo-peshka-variable", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: var(--cofo_bold);
+  font-variation-settings: var(--cofo_black);
   line-height: normal;
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
-  text-decoration-color: var(--Fablab-orange, #E55807);
+  text-decoration-color: var(--Fablab-orange, #e55807);
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
@@ -82,7 +82,7 @@ a {
   padding: 0px 0px 60px 0px;
 }
 
-.sektion__tekst{
+.sektion__tekst {
   padding: 0px 0px 30px 0px;
 }
 
@@ -98,8 +98,8 @@ a {
   border-left: 4px solid var(--sort);
   background: var(--fablab_orange);
   text-decoration: none;
-  font-family: "cofo-peshka-variable",sans-serif;
-  font-weight: var(--cofo_bold);
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
   color: var(--glass_hvid);
 }
 
@@ -162,18 +162,19 @@ a {
   display: flex;
   padding: 15px 30px;
   align-items: flex-start;
-  border-top: 4px solid var(--Sort, #080B0C);
-  border-right: 4px solid var(--Sort, #080B0C);
-  border-bottom: 8px solid var(--Sort, #080B0C);
-  border-left: 4px solid var(--Sort, #080B0C);
+  border-top: 4px solid var(--Sort, #080b0c);
+  border-right: 4px solid var(--Sort, #080b0c);
+  border-bottom: 8px solid var(--Sort, #080b0c);
+  border-left: 4px solid var(--Sort, #080b0c);
   border-radius: 6px;
-  background: var(--Hvid, #F2F7F8);
+  background: var(--Hvid, #f2f7f8);
 }
 
 /* header */
 header {
   display: flex;
-  font-family: "cofo-peshka-variable",sans-serif;
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
   font-style: normal;
   width: 100%;
   height: 99px;
@@ -194,7 +195,6 @@ header {
   display: flex;
   width: fit-content;
   height: 60px;
-  
 }
 
 .header__logo--langs img {
@@ -217,7 +217,6 @@ header {
 .nav__menudesk--liste a {
   text-decoration: none;
   color: var(--glass_hvid);
-
 }
 
 /* sektioner */
@@ -274,10 +273,39 @@ header {
   flex-direction: column;
   padding: var(--ldesktop_sektion);
 }
+.kalender__guide {
+  display: flex;
+  flex-flow: row;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+.kalender__guide--tekst {
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
+  letter-spacing: 2px;
+}
+.kalender__guide--element {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#kalender__guide--farve--gron {
+  width: 20px;
+  height: 20px;
+  background-color: var(--ucl);
+}
+#kalender__guide--farve--orange {
+  width: 20px;
+  height: 20px;
+  background-color: var(--fablab_orange);
+}
 
 .kalender__container {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .kalender__navigation {
@@ -285,14 +313,201 @@ header {
   flex-direction: row;
   justify-content: space-between;
   background-color: var(--fablab_orange);
-  border-top: 4px solid var(--Sort, #080B0C);
-  border-right: 4px solid var(--Sort, #080B0C);
-  border-bottom: 8px solid var(--Sort, #080B0C);
-  border-left: 4px solid var(--Sort, #080B0C);
+  border-top: 4px solid var(--Sort, #080b0c);
+  border-right: 4px solid var(--Sort, #080b0c);
+  border-bottom: 8px solid var(--Sort, #080b0c);
+  border-left: 4px solid var(--Sort, #080b0c);
   border-radius: 6px;
-  background: var(--Fablab-orange, #E55807);
+  background: var(--Fablab-orange, #e55807);
   color: var(--glass_hvid);
   padding: 18px 40px;
+}
+.kalender__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.kalender__dage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  gap: 10px;
+}
+.kalender__dage--element {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 20px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--sort);
+  color: var(--glass_hvid);
+}
+.kalender__tekst {
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
+  font-size: 25px;
+}
+.kalender__dato {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: auto;
+}
+.kalender__dato--element {
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
+  font-size: 25px;
+  width: 100%;
+  height: auto;
+  padding: 40px 0px;
+  text-align: center;
+  background-color: var(--ucl);
+  color: var(--glass_hvid);
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.kalender__dato--element:hover {
+  background-color: var(--gnist_gul);
+  cursor: pointer;
+}
+.kalender__dato--element.booket {
+  background-color: var(--fablab_orange);
+}
+.kalender__dato--element.booket:hover {
+  background-color: var(--gnist_gul);
+  cursor: pointer;
+}
+
+.oversigt__ledig {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  align-content: center;
+  justify-content: center;
+  padding: 200px;
+}
+.oversigt__ledig.active {
+  display: block;
+}
+.oversigt__booket {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  align-content: center;
+  justify-content: center;
+  padding: 200px;
+}
+.oversigt__booket.active {
+  display: block;
+}
+.oversigt__booket--aften {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  align-content: center;
+  justify-content: center;
+  padding: 200px;
+}
+.oversigt__booket--aften.active {
+  display: block;
+}
+.oversigt__booket--morgen {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  align-content: center;
+  justify-content: center;
+  padding: 200px;
+}
+.oversigt__booket--morgen.active {
+  display: block;
+}
+.oversigt__content {
+  position: relative;
+  width: 75%;
+  min-width: 250px;
+  height: auto;
+  background-color: var(--glass_hvid);
+  padding: 40px;
+  margin: auto;
+  color: var(--sort);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.oversigt__content h2 {
+  margin-top: 40px;
+}
+.oversigt__xmark {
+  position: absolute;
+  right: 40px;
+  width: 30px;
+  transition: 0.3s;
+}
+.oversigt__xmark:hover {
+  cursor: pointer;
+}
+.oversigt__content--tider {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+.oversigt__content--tider--element {
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
+  padding: 10px 15px;
+  background-color: var(--ucl);
+  color: var(--glass_hvid);
+  border-radius: 5px;
+  border-top: 4px solid var(--Sort, #080b0c);
+  border-right: 4px solid var(--Sort, #080b0c);
+  border-bottom: 8px solid var(--Sort, #080b0c);
+  border-left: 4px solid var(--Sort, #080b0c);
+  letter-spacing: 2px;
+}
+.oversigt__content--tider--element.booket {
+  background-color: var(--fablab_orange);
 }
 
 .kontakt__sektion {
@@ -316,7 +531,7 @@ header {
   gap: var(--sdesktop);
 }
 
-.kontakt__input--felter{
+.kontakt__input--felter {
   display: flex;
   flex-direction: column;
   gap: var(--sdesktop);
@@ -341,15 +556,15 @@ header {
   gap: 16px;
 }
 
-.kontakt__links--holder p{
-  font-family: "cofo-peshka-variable",sans-serif;
+.kontakt__links--holder p {
+  font-family: "cofo-peshka-variable", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: var(--cofo_bold);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
-  text-decoration-color: var(--Fablab-orange, #E55807);
+  text-decoration-color: var(--Fablab-orange, #e55807);
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
@@ -393,7 +608,7 @@ header {
 @media screen and (max-width: 884px) {
   a {
     color: var(--Hvid);
-    font-family: "cofo-peshka-variable",sans-serif;
+    font-family: "cofo-peshka-variable", sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: var(--cofo_bold);
@@ -401,7 +616,7 @@ header {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
-    text-decoration-color: var(--Fablab-orange, #E55807);
+    text-decoration-color: var(--Fablab-orange, #e55807);
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
@@ -410,7 +625,7 @@ header {
   header {
     display: flex;
     justify-content: center;
-    font-family: "cofo-peshka-variable",sans-serif;
+    font-family: "cofo-peshka-variable", sans-serif;
     font-style: normal;
     justify-content: space-;
     background: var(--ucl);
@@ -423,15 +638,14 @@ header {
   }
   .header__logo--langs {
     display: none;
-    
   }
-  
+
   .hero__container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .hero__info {
     flex-direction: column;
     justify-content: space-around;
@@ -440,16 +654,15 @@ header {
     border-radius: 6px;
     max-width: 500px;
   }
-  
+
   .projekter__sektion {
     padding: var(--ldesktop_sektion);
   }
 
-  .projekter__container--slideshow img{
+  .projekter__container--slideshow img {
     max-width: 500px;
     padding: 0px 20px;
   }
-
 
   .maskiner__sektion {
     padding: var(--ldesktop_sektion);
@@ -462,18 +675,17 @@ header {
     padding: var(--ldesktop_sektion);
   }
 
-
   .kontakt__sektion {
     padding: var(--ldesktop_sektion);
   }
-  
+
   .kontakt__container {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
   }
-  
+
   .kontakt__billede img {
     padding: 30px 0px 0px 0px;
     max-width: 500px;
@@ -482,7 +694,6 @@ header {
   .kontakt__oplysninger {
     display: flex;
     flex-direction: column;
-
   }
 
   .footer {
@@ -492,21 +703,20 @@ header {
     color: var(--glass_hvid);
     background-color: var(--ucl);
   }
-  
+
   .footer__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: var(--mdesktop);
   }
-  
+
   .footer__felt img {
     max-width: 500px;
   }
-  
+
   .footer__info--container {
     display: flex;
     flex-direction: column;
   }
-
 }
