@@ -273,6 +273,32 @@ header {
   flex-direction: column;
   padding: var(--ldesktop_sektion);
 }
+.kalender__guide {
+  display: flex;
+  flex-flow: row;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+.kalender__guide--tekst {
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
+  letter-spacing: 2px;
+}
+.kalender__guide--element {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#kalender__guide--farve--gron {
+  width: 20px;
+  height: 20px;
+  background-color: var(--ucl);
+}
+#kalender__guide--farve--orange {
+  width: 20px;
+  height: 20px;
+  background-color: var(--fablab_orange);
+}
 
 .kalender__container {
   width: 100%;
