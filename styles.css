@@ -226,13 +226,22 @@ header {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.3s ease-out;
-  padding: 0 20px;
+  padding: 0 0px;
   display: none;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .accordion-content.active {
   max-height: 200px; /* Juster denne værdi baseret på indholdets højde */
   display: block;
+}
+
+.tutorial_video{
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 /* Maskiner accodordion-------------------------------------------*/
 
