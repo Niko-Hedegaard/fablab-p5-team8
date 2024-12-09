@@ -242,6 +242,9 @@ header {
   height: 500px;
   margin-top: 20px;
   margin-bottom: 30px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
 }
 /* Maskiner accodordion-------------------------------------------*/
 
