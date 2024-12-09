@@ -221,6 +221,21 @@ header {
 
 /* sektioner */
 
+/* Maskiner accodordion-------------------------------------------*/
+.accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  padding: 0 20px;
+  display: none;
+}
+
+.accordion-content.active {
+  max-height: 200px; /* Juster denne værdi baseret på indholdets højde */
+  display: block;
+}
+/* Maskiner accodordion-------------------------------------------*/
+
 .fablab__hero {
   display: flex;
   justify-content: center;
