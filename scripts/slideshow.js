@@ -17,7 +17,6 @@ const breadText = [
     "Lav mere konventionelle ting såsom denne bordskåner."
 ]
 
-
 //start indexet i 0
 let currentIndex = 0;
 
