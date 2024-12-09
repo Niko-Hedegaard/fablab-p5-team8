@@ -89,6 +89,7 @@ a {
 .button__cta--1 {
   display: inline-flex;
   padding: 12px 20px;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   border-radius: 6px;
