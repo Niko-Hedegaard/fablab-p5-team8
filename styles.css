@@ -717,10 +717,10 @@ header {
     padding: var(--ldesktop_sektion);
   }
 
-  .projekter__container--slideshow img {
-    max-width: 500px;
-    padding: 0px 20px;
+  .projekter__container--slideshow {
+    flex-direction: column;
   }
+  
 
   .maskiner__sektion {
     padding: var(--ldesktop_sektion);

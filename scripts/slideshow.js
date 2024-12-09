@@ -5,11 +5,26 @@ const images = [
     {src: "./images/ucl_footer-billede.webp", alt: "Billede 3"}
 ]
 
+const headerText = [
+    "Projekt 1",
+    "Projekt 2",
+    "Projekt 3"
+]
+
+const breadText = [
+    "Projekt 1",
+    "Projekt 2",
+    "Projekt 3"
+]
+
+
 //start indexet i 0
-let currentIndex = 2;
+let currentIndex = 0;
 
 //diverse elementer (DOM)
 const imageElement = document.getElementById("projekter__billed--img");
+const imagesText = document.getElementById("text--header");
+const imagesBread = document.getElementById("text--bread");
 const prevButton = document.getElementById("pil__prev");
 const nextButton = document.getElementById("pil__next");
 
@@ -18,6 +33,8 @@ function updateImage() {
     const currentImage = images[currentIndex];
     imageElement.src = currentImage.src;
     imageElement.alt = currentImage.alt;
+    imagesText.textContent = headerText[currentIndex];
+    imagesBread.textContent =breadText[currentIndex];
 }
 
 //knap og operatorer til funktionen.
