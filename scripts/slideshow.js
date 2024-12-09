@@ -1,15 +1,15 @@
 //billede array
 const images = [
     {src: "./images/hero_placeholder-img.png", alt: "Billede 1"},
-    {src: "./images/hero_placeholder-img.png", alt: "Billede 1"},
-    {src: "./images/hero_placeholder-img.png", alt: "Billede 1"}
+    {src: "./images/slideshow_placeholder.png", alt: "Billede 2"},
+    {src: "./images/ucl_footer-billede.webp", alt: "Billede 3"}
 ]
 
 //start indexet i 0
-let currentIndex = 0;
+let currentIndex = 2;
 
 //diverse elementer (DOM)
-const imageElement = document.getElementById("projekter__billed--ramme");
+const imageElement = document.getElementById("projekter__billed--img");
 const prevButton = document.getElementById("pil__prev");
 const nextButton = document.getElementById("pil__next");
 
