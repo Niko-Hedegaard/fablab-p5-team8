@@ -87,7 +87,7 @@ a {
 }
 
 .button__cta--1 {
-  display: inline-flex;
+  display: inline-block;
   padding: 12px 20px;
   cursor: pointer;
   justify-content: center;
@@ -98,6 +98,23 @@ a {
   border-bottom: 8px solid var(--sort);
   border-left: 4px solid var(--sort);
   background: var(--fablab_orange);
+  text-decoration: none;
+  font-family: "cofo-peshka-variable", sans-serif;
+  font-variation-settings: var(--cofo_black);
+  color: var(--glass_hvid);
+}
+
+.button__cta--1:hover {
+  display: inline-block;
+  padding: 12px 20px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border-top: 4px solid var(--sort);
+  border-right: 4px solid var(--sort);
+  border-bottom: 8px solid var(--sort);
+  background: var(--gnist_gul);
   text-decoration: none;
   font-family: "cofo-peshka-variable", sans-serif;
   font-variation-settings: var(--cofo_black);
@@ -217,6 +234,11 @@ header {
 
 .nav__menudesk--liste a {
   text-decoration: none;
+  color: var(--glass_hvid);
+}
+
+.nav__menudesk--liste a:hover {
+  text-decoration: underline;
   color: var(--glass_hvid);
 }
 
