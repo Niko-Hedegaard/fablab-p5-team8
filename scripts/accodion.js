@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(`Button ${i} er klar til at blive klikket.`); // Log besked for hver knap
     }
   
-    // Eksempel på arrays og objekter for at opfylde pensum
+    // Eksempel på arrays og objekter
     const accordionInfo = [
       { id: 1, title: "3D-printer", isOpen: false }, // Objekter i et array
       { id: 2, title: "Laserskærer", isOpen: false },
