@@ -277,18 +277,49 @@ header {
   padding: var(--ldesktop_sektion);
 }
 
-.projekter__container--slideshow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.projekter__text {
+.projetker__container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.projekter__container--slideshow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.projekter__text--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--ldesktop);
+}
+
+.projekter__billed--ramme {
+  width: 500px;
+  height: 300px; 
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+#projekter__billed--img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain; 
+}
+
+.projekter__navigation  {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--ldesktop);
+}
+
 
 .maskiner__sektion {
   padding: var(--ldesktop_sektion);
