@@ -34,19 +34,23 @@ function updateImage() {
     imageElement.src = currentImage.src;
     imageElement.alt = currentImage.alt;
     imagesText.textContent = headerText[currentIndex];
-    imagesBread.textContent =breadText[currentIndex];
+    imagesBread.textContent = breadText[currentIndex];
 }
 
-//knap og operatorer til funktionen.
+if (currentIndex === 2) {
+}
 prevButton.addEventListener("click", () => {
     currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
     updateImage();
 });
 
 nextButton.addEventListener("click", () => {
-    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-    updateImage();
+    if (currentIndex === images.length - 1) {
+        alert("Du er nået slutningen... Vi håber du har fået en masse inspiration!");
+    } else {
+        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+        updateImage();
+    }
 });
 
-// Opdatering
 updateImage();
