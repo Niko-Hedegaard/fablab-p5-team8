@@ -1,8 +1,8 @@
 //billede array
 const images = [
-    {src: "./images/hero_placeholder-img.png", alt: "Billede 1"},
-    {src: "./images/slideshow_placeholder.png", alt: "Billede 2"},
-    {src: "./images/ucl_footer-billede.webp", alt: "Billede 3"}
+    {src: "./images/projekt_1-p5-team8.webp", alt: "Billede 1"},
+    {src: "./images/projekt_2-p5-team8.webp", alt: "Billede 2"},
+    {src: "./images/projekt_3-p5-team8.webp", alt: "Billede 3"},
 ]
 
 const headerText = [
@@ -12,9 +12,9 @@ const headerText = [
 ]
 
 const breadText = [
-    "Projekt 1",
-    "Projekt 2",
-    "Projekt 3"
+    "Lav dine egne 3D figurer i træ!",
+    "Du kan også bruge vores fede 3D printere til store projekter",
+    "Lav mere konventionelle ting såsom denne bordskåner."
 ]
 
 
