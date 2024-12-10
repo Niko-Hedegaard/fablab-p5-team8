@@ -731,6 +731,7 @@ header {
 }
 
 .footer__kontakt--billede {
+  display: flex;
   padding-bottom: var(--sdesktop);
 }
 
@@ -742,6 +743,12 @@ header {
 
 .some__ikon img{
   height: 60px;
+}
+
+.footer__bottom--tekst {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 884px) {
@@ -850,7 +857,6 @@ header {
   .footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 100px 50px 100px 50px;
     color: var(--glass_hvid);
     background-color: var(--ucl);
@@ -863,6 +869,7 @@ header {
   }
 
   .footer__felt img {
+    display: flex;
     max-width: 500px;
   }
 
@@ -874,5 +881,6 @@ header {
   .footer__bottom--tekst {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
