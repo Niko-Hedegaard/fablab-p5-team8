@@ -70,7 +70,7 @@
                 <div class="projekter__text--header">
                   <H3 id="text--header">Pladsholder til projekt overskrift.</H3>
                 </div>
-                <div id="projekter__text-bread">
+                <div class="projekter__text--bread">
                   <p id="text--bread">Pladsholder til projekt tekst.</p>
                 </div>
               </div>
@@ -394,13 +394,14 @@
               <button class="button__cta--1">Send</button>
             </div>
           </div>
+
           <div class="kontakt__info">
             <div class="kontakt__info--container">
               <div class="kontakt__billede">
                 <img src="images/billede_tekst-michael.webp" alt="billede af Michael">
               </div>
               <div class="kontakt__oplysninger">
-                <div>
+                <div id="kontakt__billede--oplysninger">
                   <p>Fablab Manager</p>
                   <p>Odense</p>
                 </div>
@@ -417,7 +418,8 @@
                 </div>
               </div>
             </div>
-          </div>        
+          </div>  
+
         </div>
       </section>
 
@@ -550,8 +552,10 @@
           <div class="footer__felt">
 
             <div class="footer__info--container">
-              <img src="./images/ucl_footer-billede.webp" alt="Billede af UCL, Seebladsgade">
-
+              <div class="footer__kontakt--billede">
+                <img src="./images/ucl_footer-billede.webp" alt="Billede af UCL, Seebladsgade">
+              </div>
+              
               <div class="kontakt__oplysninger">                
                 <div class="kontakt__links">
                   <div class="kontakt__links--holder">
@@ -559,19 +563,17 @@
                     <a href="#kontakt">+45 40878129</a>
                   </div>
                   
-                  <div class="kontakt__links--holder">
+                  <div class="kontakt__links--holder" id="footer__kontakt--info">
                     <img src="images/icons/besked_ikon-small.svg" alt="Besked ikon">
                     <a href="#kontakt">micj@ucl.dk</a>
                   </div>
                 </div>
               </div>
-              
-
                 <p>Adresse: Seebladsgade 1, 5000 Odense</p>
-
               </div>
               
             </div>
+            
             
           </div>
 
