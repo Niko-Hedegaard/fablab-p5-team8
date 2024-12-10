@@ -696,6 +696,12 @@ header {
   flex-direction: column;
 }
 
+#some__ikon--container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
 @media screen and (max-width: 884px) {
   a {
     color: var(--Hvid);
