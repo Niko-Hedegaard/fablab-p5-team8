@@ -6,15 +6,15 @@ const images = [
 ]
 
 const headerText = [
-    "Projekt 1",
-    "Projekt 2",
-    "Projekt 3"
+    "Laserskærer og fremtidens Kunst",
+    "3D-Print Din Egen Robot",
+    "Personlig Bordskåner"
 ]
 
 const breadText = [
-    "Lav dine egne 3D figurer i træ!",
-    "Du kan også bruge vores fede 3D printere til store projekter",
-    "Lav mere konventionelle ting såsom denne bordskåner."
+    "I vores fabrication laboratory bliver idéer til virkelighed, bogstaveligt talt! Med laserskæring kan du forvandle flade materialer til en imponerende 3D-hjort, der kombinerer traditionelt håndværk med moderne teknologi. Projektet viser, hvordan kreativitet og innovation mødes i praksis, og inspirerer studerende til at tænke nyt. Her er fortiden og fremtiden samlet i ét skabende rum!",
+    "I vores fabrication laboratory kan du bringe fremtiden til live! Med en 3D-printer kan du designe og skabe din egen robot - fra første idé til færdigt produkt. Projektet viser, hvordan teknologi og fantasi smelter sammen, og inspirerer studerende til at tænke i nye dimensioner. Her er innovation ikke bare en tanke - det er noget, du kan holde i hænderne!",
+    "I vores fabrication laboratory bliver hverdagsobjekter til kunstværker! Med en laserskærer kan du designe og skabe din egen bordskåner med et personligt motiv - præcist, unikt og fuld af kreativitet. Projektet viser, hvordan teknologi kan forvandle simple idéer til praktiske og smukke løsninger, der inspirerer til personlig innovation. Fra idé til bordet - alt sker her!"
 ]
 
 //start indexet i 0
