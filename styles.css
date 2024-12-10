@@ -737,6 +737,11 @@ header {
     justify-content: center;
   }
 
+  .header__logo--langs img {
+    width: 150px;
+  }
+
+
   .hero__container {
     display: flex;
     justify-content: center;
