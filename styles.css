@@ -304,12 +304,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .projekter__container--slideshow {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 
 }
 
@@ -320,8 +322,6 @@ header {
 }
 
 .projekter__billed--ramme {
-  width: 500px;
-  height: 300px; 
   overflow: hidden; 
   display: flex;
   justify-content: center;
