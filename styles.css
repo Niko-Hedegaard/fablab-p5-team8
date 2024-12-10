@@ -102,18 +102,20 @@ a {
   font-family: "cofo-peshka-variable", sans-serif;
   font-variation-settings: var(--cofo_black);
   color: var(--glass_hvid);
+  transition: 0.3s;
 }
 
 .button__cta--1:hover {
   display: inline-block;
   padding: 12px 20px;
+  margin-bottom: 4px;
   cursor: pointer;
   justify-content: center;
   align-items: center;
   border-radius: 6px;
   border-top: 4px solid var(--sort);
   border-right: 4px solid var(--sort);
-  border-bottom: 8px solid var(--sort);
+  border-bottom: 4px solid var(--sort);
   background: var(--gnist_gul);
   text-decoration: none;
   font-family: "cofo-peshka-variable", sans-serif;
@@ -203,10 +205,6 @@ header {
   position: fixed;
   top: 0;
   z-index: 999999;
-}
-
-.header__logo--mobile {
-  display: none;
 }
 
 .header__logo--langs {
@@ -704,20 +702,20 @@ header {
 
   header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-family: "cofo-peshka-variable", sans-serif;
     font-style: normal;
-    justify-content: space-;
+    height: 120px;
     background: var(--ucl);
     position: fixed;
     top: 0;
     z-index: 999999;
   }
-  .header__logo--mobile {
-    display: flex;
-  }
+
   .header__logo--langs {
-    display: none;
+    display: flex;
+    justify-content: center;
   }
 
   .hero__container {
