@@ -36,7 +36,7 @@ h1 {
   font-size: 50px;
   font-style: normal;
   font-variation-settings: var(--cofo_black);
-  line-height: 55, 5px;
+  line-height: 55.5px;
 }
 
 h2 {
@@ -44,7 +44,7 @@ h2 {
   font-size: 42px;
   font-style: normal;
   font-variation-settings: var(--cofo_black);
-  line-height: 46, 6px;
+  line-height: 46.6px;
 }
 
 h3 {
@@ -52,7 +52,7 @@ h3 {
   font-size: 26px;
   font-style: normal;
   font-variation-settings: var(--cofo_black);
-  line-height: 28, 9px;
+  line-height: 28.9px;
 }
 
 p {
@@ -267,6 +267,7 @@ header {
   object-fit: cover;
   object-position: center;
   overflow: hidden;
+  border: 0;
 }
 /* Maskiner accodordion-------------------------------------------*/
 
@@ -696,7 +697,7 @@ header {
   flex-direction: column;
 }
 
-#some__ikon--container {
+.some__ikon--container {
   display: flex;
   flex-direction: row;
   gap: 30px;
