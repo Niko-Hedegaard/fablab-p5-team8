@@ -1,4 +1,4 @@
-let weekender = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag"];
+let weekender = ["Man.", "Tirs.", "Ons.", "Tor.", "Fre."];
 let kalenderDageContainer = document.getElementById("dage__container");
 
 weekender.forEach((dag) => {

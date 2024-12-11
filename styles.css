@@ -448,6 +448,7 @@ header {
   border-radius: 10px;
   background: var(--sort);
   color: var(--glass_hvid);
+  overflow-x: hidden;
 }
 .kalender__tekst {
   font-family: "cofo-peshka-variable", sans-serif;
@@ -861,6 +862,7 @@ header {
 
   .kontakt__formular {
     padding-bottom: var(--mdesktop);
+    padding-right: 0px;
   }
 
   .kontakt__billede img {
