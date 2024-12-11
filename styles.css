@@ -760,6 +760,15 @@ header {
 }
 
 @media screen and (max-width: 884px) {
+
+  :root {
+    /* spacing */
+    --ldesktop: 60px;
+    --mdesktop: 30px;
+    --sdesktop: 20px;
+    --ldesktop_sektion: 100px 50px 100px 50px;
+  }
+
   a {
     color: var(--Hvid);
     font-family: "cofo-peshka-variable", sans-serif;
@@ -803,6 +812,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .hero__info {
