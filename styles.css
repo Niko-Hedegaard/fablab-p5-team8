@@ -770,10 +770,41 @@ header {
     --ldesktop_sektion: 100px 50px 100px 50px;
   }
 
+  h1 {
+    font-family: "cofo-peshka-variable", sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-variation-settings: var(--cofo_black);
+    line-height: 55.5px;
+  }
+  
+  h2 {
+    font-family: "cofo-peshka-variable", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-variation-settings: var(--cofo_black);
+    line-height: 46.6px;
+  }
+  
+  h3 {
+    font-family: "cofo-peshka-variable", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variation-settings: var(--cofo_black);
+    line-height: 28.9px;
+  }
+  
+  p {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 22px;
+  }
+
   a {
     color: var(--Hvid);
     font-family: "cofo-peshka-variable", sans-serif;
-    font-size: 10px;
+    font-size: 16px;
     font-style: normal;
     font-weight: var(--cofo_bold);
     line-height: normal;
@@ -798,6 +829,9 @@ header {
     top: 0;
     z-index: 999999;
   }
+  .nav__menudesk--liste a{
+    font-size: 12px;
+  }
 
   .header__logo--langs {
     display: flex;
@@ -807,7 +841,6 @@ header {
   .header__logo--langs img {
     width: 150px;
   }
-
 
   .hero__container {
     display: flex;
@@ -890,7 +923,7 @@ header {
 
   .footer__felt img {
     display: flex;
-    max-width: 500px;
+    max-width: 50vw;
   }
 
   .footer__info--container {
