@@ -108,7 +108,7 @@ a {
 .button__cta--1:hover {
   display: inline-block;
   padding: 12px 20px;
-  margin-bottom: 4px;
+  margin-top: 4px;
   cursor: pointer;
   justify-content: center;
   align-items: center;
@@ -231,6 +231,7 @@ header {
 .nav__menudesk--liste {
   display: flex;
   gap: var(--sdesktop);
+  align-items: center;
 }
 
 .nav__menudesk--liste a {
@@ -817,6 +818,26 @@ header {
     text-underline-position: from-font;
   }
 
+
+  .button__cta--1 {
+    display: inline-block;
+    padding: 10px 16px;
+  }
+
+  .button__cta--1:hover {
+    padding: 10px 16px;
+  }
+
+  .drop__down--button1 {
+    font-size: 20px;
+    overflow-x: hidden;
+  }
+
+  .drop__down--button2 {
+    font-size: 20px;
+    overflow-x: hidden;
+  }
+
   header {
     display: flex;
     flex-direction: column;
@@ -829,7 +850,25 @@ header {
     top: 0;
     z-index: 999999;
   }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav__menudesk {
+    display: flex;
+  }
+  
+  .nav__menudesk--liste {
+    display: flex;
+    flex-wrap: row wrap;
+    gap: 12px;
+  }
+
   .nav__menudesk--liste a{
+    display: flex;
     font-size: 12px;
   }
 
@@ -853,9 +892,13 @@ header {
     flex-direction: column;
     justify-content: space-around;
     background-color: var(--glass_hvid);
-    padding: 30px 60px;
+    padding: 20px 30px;
     border-radius: 6px;
     max-width: 500px;
+  }
+
+  .hero__info h1{
+    font-size: 36px;
   }
 
   .projekter__sektion {
